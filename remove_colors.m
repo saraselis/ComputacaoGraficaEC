@@ -1,4 +1,4 @@
-function img_cinza = remove_colors(path_img_original)
+function img_blue = remove_colors(path_img_original)
 %{
   * Script que troca a escala de uma imagem de RBG para Gray.
 
