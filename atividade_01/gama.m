@@ -13,6 +13,9 @@ function img_original = gama(path_img_original)
 % leitura da imagem
 img_original = imread(path_img_original);
 
+% convertendo de uint8 para reais de 0~1
+img_original = double(img_original)/255;
+
 % conferindo se a imagem recebida está no espaço RGB
 tam = size(img_original);
 [lin, col] = size(img_original);
