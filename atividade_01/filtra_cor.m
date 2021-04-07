@@ -14,6 +14,9 @@ function img_original = filtra_cor(path_img_original, cor)
 % realizando a leitura da imagem
 img_original = imread(path_img_original);
 
+% convertendo de uint8 para reais de 0~1
+img_original = double(img_original)/255;
+
 % conferindo se a imagem está no espectro RGB
 tam = size(img_original);
 [lin, col] = size(img_original);
