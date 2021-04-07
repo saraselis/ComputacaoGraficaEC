@@ -38,10 +38,10 @@ if mean_intensity_cinza < 150.0
   fprintf('Média de intensidade de pixels enclarear: %d\n', mean_intensity_claro);
   
   figure;
-  subplot(1, 2, 1); imshow(img_original);
-  title('Imagem original'); ylabel(path_img_original);
+  subplot(1, 2, 1); imshow(img_cinza);
+  title('Imagem binária'); 
   subplot(1, 2, 2); imshow(img_claro);
-  title('Imagem enclarecida');ylabel(path_img_original);
+  title('Imagem enclarecida');
 
 
 else
@@ -53,9 +53,9 @@ else
   fprintf('Média de intensidade de pixels após escurecer: %d\n', mean_intensity_escuro);
   
   figure;
-  subplot(1, 2, 1); imshow(img_original);
-  title('Imagem original'); ylabel(path_img_original);
+  subplot(1, 2, 1); imshow(img_cinza);
+  title('Imagem binária'); 
   subplot(1, 2, 2); imshow(img_escura);
-  title('Imagem escurecida');ylabel(path_img_original);
+  title('Imagem escurecida');
 end
 
