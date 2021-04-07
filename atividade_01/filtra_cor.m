@@ -31,7 +31,7 @@ if cor_escolhida == 'r'
  
   img_filtrada = img_original;
 
-  % removendo os espectros azul e verde
+  % removendo as componentes azul e verde
   img_filtrada(:, :, 2) = 0;
   img_filtrada(:, :, 3) = 0;
 
@@ -45,7 +45,7 @@ elseif cor_escolhida == 'g'
   display('Filtro verde escolhido!')
   img_filtrada = img_original;
 
-  % removendo os espectros azul e vermelho
+  % removendo as componentes azul e vermelho
   img_filtrada(:, :, 1) = 0;
   img_filtrada(:, :, 3) = 0;
   
@@ -59,7 +59,7 @@ elseif cor_escolhida == 'b'
   display('Filtro azul escolhido!')
   img_filtrada = img_original;
   
-  % removendo os espectros verde e vermelho
+  % removendo as componentes do verde e vermelho
   img_filtrada(:, :, 1) = 0;
   img_filtrada(:, :, 2) = 0;
   
