@@ -41,7 +41,7 @@ if mean_intensity_cinza < 150.0
   subplot(1, 2, 1); imshow(img_original);
   title('Imagem original'); ylabel(path_img_original);
   subplot(1, 2, 2); imshow(img_claro);
-  title('Imagem enclarecida', "color", "red");ylabel(path_img_original);
+  title('Imagem enclarecida');ylabel(path_img_original);
 
 
 else
@@ -56,6 +56,6 @@ else
   subplot(1, 2, 1); imshow(img_original);
   title('Imagem original'); ylabel(path_img_original);
   subplot(1, 2, 2); imshow(img_escura);
-  title('Imagem escurecida', "color", "red");ylabel(path_img_original);
+  title('Imagem escurecida');ylabel(path_img_original);
 end
 
