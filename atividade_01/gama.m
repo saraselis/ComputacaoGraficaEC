@@ -32,9 +32,9 @@ img_cinza = rgb2gray(img_original);
 mean_intensity_cinza = mean(img_cinza(:));
 fprintf('Média de intensidade de pixels: %d\n', mean_intensity_cinza);
 
-if mean_intensity_cinza < 150.0
+if mean_intensity_cinza < 0.5
   % clareando a imagem
-  img_claro = img_cinza.^(1.5);
+  img_claro = img_cinza.^(0.6);
   
   display('Imagem escura, vamos clarear!')
   mean_intensity_claro = mean(img_claro(:));
@@ -49,7 +49,7 @@ if mean_intensity_cinza < 150.0
 
 else
   % escurecendo a imagem
-  img_escura = img_cinza.^(0.6);
+  img_escura = img_cinza.^(1.5);
 
   display('Imagem clara, vamos escurecer')
   mean_intensity_escuro = mean(img_escura(:));
