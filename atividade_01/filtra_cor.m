@@ -28,6 +28,9 @@ end
 
 % convertendo a variavel recebida para minuscula
 cor_escolhida = tolower(cor)
+% caso o algoritmo seja interpretado usando o Matlab,
+% a função tolower deve ser substituída por:
+% cor_escolhida = lower(cor)
 
 if cor_escolhida == 'r'
   display('Filtro vermelho escolhido!')
