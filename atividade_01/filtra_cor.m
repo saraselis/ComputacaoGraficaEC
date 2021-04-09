@@ -37,12 +37,14 @@ if cor_escolhida == 'r'
   % removendo as componentes azul e verde
   img_filtrada(:, :, 2) = 0;
   img_filtrada(:, :, 3) = 0;
+  
+  img_filtrada = rgb2gray(img_filtrada);
 
   figure;
-  subplot(1, 2, 1); imshow(img_filtrada);
-  title('Imagem com filtro vermelho'); ylabel(path_img_original);
-  subplot(1, 2, 2); imshow(img_original);
-  title('Imagem original'); ylabel(path_img_original);
+  subplot(1, 2, 1); imshow(img_original);
+  title('Imagem com filtro vermelho');
+  subplot(1, 2, 2); imshow(img_filtrada);
+  title('Imagem original'); 
 
 elseif cor_escolhida == 'g'
   display('Filtro verde escolhido!')
@@ -52,11 +54,13 @@ elseif cor_escolhida == 'g'
   img_filtrada(:, :, 1) = 0;
   img_filtrada(:, :, 3) = 0;
   
+  img_filtrada = rgb2gray(img_filtrada);
+  
   figure;
-  subplot(1, 2, 1); imshow(img_filtrada);
-  title('Imagem com filtro verde'); ylabel(path_img_original);
-  subplot(1, 2, 2); imshow(img_original);
-  title('Imagem original'); ylabel(path_img_original);
+  subplot(1, 2, 1); imshow(img_original);
+  title('Imagem com filtro verde'); 
+  subplot(1, 2, 2); imshow(img_filtrada);
+  title('Imagem original'); 
 
 elseif cor_escolhida == 'b'
   display('Filtro azul escolhido!')
@@ -66,11 +70,13 @@ elseif cor_escolhida == 'b'
   img_filtrada(:, :, 1) = 0;
   img_filtrada(:, :, 2) = 0;
   
+  img_filtrada = rgb2gray(img_filtrada);
+  
   figure;
-  subplot(1, 2, 1); imshow(img_filtrada);
-  title('Imagem com filtro azul'); ylabel(path_img_original);
-  subplot(1, 2, 2); imshow(img_original);
-  title('Imagem original'); ylabel(path_img_original);
+  subplot(1, 2, 1); imshow(img_original);
+  title('Imagem com filtro azul'); 
+  subplot(1, 2, 2); imshow(img_filtrada);
+  title('Imagem original'); 
   
 else
   display('Opção inválida! \n Escolha R, G ou B!')
